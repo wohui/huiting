@@ -26,6 +26,15 @@ body {
     width: 250px;
     height: 250px;
 }
+#singer_desc {
+    width: 400px;
+    height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 100;
+}
 .singer_name {
     height: 36px;
     font-size: 32px;

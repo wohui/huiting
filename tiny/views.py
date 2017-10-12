@@ -47,6 +47,7 @@ def get_singer_data(request):
     singer_data = {}
     singer_data['id'] = singer_id
     singer_data['name'] = res_json['artist']['name']
+    singer_data['desc'] = res_json['artist']['briefDesc']
     singer_data['img'] = res_json['artist']['img1v1Url']
     singer_data['musicSize'] = res_json['artist']['musicSize']
     singer_data['albumSize'] = res_json['artist']['albumSize']
