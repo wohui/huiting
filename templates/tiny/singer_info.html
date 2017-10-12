@@ -22,6 +22,7 @@
 </div>
 {% verbatim %}
 <div id="main">
+    <!--歌手begin-->
     <div id="singer_info">
         <div id="singer_img">
             <img :src="singer_data.img">
@@ -55,6 +56,36 @@
                 <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>播放</a>
                 <a class="waves-effect waves-teal btn-flat green"><i class="material-icons left">add</i>关注</a>
             </div>
+        </div>
+    </div>
+    <!--歌手end-->
+    <div id="hot_songs">
+        <div id="songs_tab">
+            <p>热门歌曲</p>
+        </div>
+        <div id="songs_list">
+            <ul id="songs_list_header">
+                <li class="songs_list_item">歌曲</li>
+                <li class="songs_list_item">操作</li>
+                <li class="songs_list_time">时间</li>
+            </ul>
+            <ul id="songs_list_list">
+                <li class="songs_list_list_li">
+
+                    <div class="songs_list_item">
+                        <button>点击</button>
+                    </div>
+                    <div class="songs_list_item"><a href="#">Ljie</a></div>
+                    <div class="songs_list_time">时间</div>
+                </li>
+                <li class="songs_list_list_li">
+
+                    <div class="songs_list_item">歌曲</div>
+                    <div class="songs_list_item">操作</div>
+                    <div class="songs_list_time">时间</div>
+                </li>
+            </ul>
+
         </div>
     </div>
 </div>

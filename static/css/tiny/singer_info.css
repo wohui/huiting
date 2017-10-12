@@ -58,3 +58,31 @@ body {
     margin-right: 10px;
     padding-right: 30px;
 }
+/*热门歌曲*/
+#hot_songs {
+    padding: 10px;
+    background: #0089ec;
+    margin-left: 300px;
+}
+#songs_tab {
+    font-size: 18px;
+}
+#songs_list_header {
+    display: flex;
+}
+
+#songs_list_list  {
+    height: 500px;
+}
+.songs_list_list_li {
+    display: flex;
+    width: 1200px;
+
+}
+
+.songs_list_item {
+    height: 50px;
+    width: 33%;
+    padding-left: 40px;
+    padding-right: 120px;
+}
