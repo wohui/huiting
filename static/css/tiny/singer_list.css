@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+}
+
+#header {
+    margin-top: 20px;
+    width: auto;
+    height: 320px;
+    background: url("../../imgs/bg_singer.jpg") 50% 0 repeat-x;
+    text-align: center;
+}
+#header-desc {
+    line-height: 160px;/*等于父容器高，垂直*/
+    margin: auto;
+    font-size: 48px;
+    width: auto;
+    color: white;
+}
+#header-desc2 {
+    line-height: 50px;/*等于父容器高，垂直*/
+    margin: auto;
+    font-size: 28px;
+    width: auto;
+    color: white;
+}
+#main {
+    margin: 10px auto;
+    width: 1200px;
+    height: 420px;
+    background: #00838f;
+}
+.list-ul {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.list-li {
+    margin: 10px auto;
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.list-div img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}

@@ -1,0 +1,44 @@
+{% load static %}
+{% load i18n %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>翻歌手牌子了</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+    <link type="text/css" href="{% static 'css/tiny/singer_list.css' %}" rel="stylesheet"/>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'js/materialize.js'%}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'js/vue.js'%}" type="text/javascript" charset="utf-8"></script>
+
+</head>
+{#            <div class="list-div">#}
+{#                <img src={{ item.singer_name }}>#}
+{#                <h6>{{ item.singer_img}}</h6>#}
+{#            </div>#}
+<body>
+<div id="header">
+    <p id="header-desc">总有一款适合你</p>
+    <p id="header-desc2">选吧，皮卡丘</p>
+</div>
+{% verbatim %}
+<div id="main">
+    <ul id="singer_list_ul" class="list-ul">
+        <li  v-for="item in singer_list" class="list-li" v-on:click="onSearch(item)">
+            <div class="list-div">
+                <img :src="item.singer_img">
+                <h6>{{ item.singer_name}}</h6>
+            </div>
+
+        </li>
+    </ul>
+</div>
+{% endverbatim %}
+<div id="footer">
+
+</div>
+<script src="{% static 'js/tiny/singer_list.js' %}" type="text/javascript"></script>
+</body>
+</html>

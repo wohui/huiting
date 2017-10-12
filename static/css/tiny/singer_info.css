@@ -1,0 +1,51 @@
+body {
+
+}
+
+#main {
+    margin: 0 auto;
+    background: #d0d0d0;
+}
+#singer_info {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+#singer_img {
+    width: 250px;
+    height: 250px;
+}
+#singer_summary {
+    margin-left: 30px;
+    margin-top: 15px;
+    width: auto;
+    height: 250px;
+}
+#singer_img img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+.singer_name {
+    height: 36px;
+    font-size: 32px;
+    font-weight: 400;
+}
+.singer_count {
+     height: 24px;
+     line-height: 24px;
+}
+.singer_count_item {
+    padding-right: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+}
+.singer_count_item strong {
+    font-size: 25px;
+    font-weight: 400;
+}
+.singer_actions a {
+    margin-right: 10px;
+    padding-right: 30px;
+}

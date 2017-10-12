@@ -1,0 +1,67 @@
+{% load static %}
+{% load i18n %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>翻歌手牌子了</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+    <link type="text/css" href="{% static 'css/tiny/singer_info.css' %}" rel="stylesheet"/>
+    <link type="text/css" href="{% static 'css/material-icons.css' %}" rel="stylesheet"/>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'js/materialize.js'%}" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static 'js/vue.js'%}" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+<div id="header">
+
+</div>
+{% verbatim %}
+<div id="main">
+    <div id="singer_info">
+        <div id="singer_img">
+            <img :src="singer_data.img">
+        </div>
+        <div id="singer_summary">
+            <p class="singer_name">{{ singer_data.name }}</p>
+            {% endverbatim %}
+            <p class="singer_desc">{{ singer_id }}</p>
+            {% verbatim %}
+            <ul class="singer_count">
+                <li class="singer_count_item">
+                    <a href="#">
+                        <span class="singer_count_type">单曲</span>
+                        <strong class="singer_count_number">{{  singer_data.musicSize}}</strong>
+                    </a>
+                </li>
+                <li class="singer_count_item">
+                    <a href="#">
+                        <span class="singer_count_type">专辑</span>
+                        <strong class="singer_count_number">{{singer_data.albumSize}}</strong>
+                    </a>
+                </li>
+                <li class="singer_count_item">
+                    <a href="#">
+                        <span class="singer_count_type">MV</span>
+                        <strong class="singer_count_number">{{ singer_data.mvSize}}</strong>
+                    </a>
+                </li>
+            </ul>
+            <div class="singer_actions">
+                <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>播放</a>
+                <a class="waves-effect waves-teal btn-flat green"><i class="material-icons left">add</i>关注</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endverbatim %}
+<div id="footer">
+
+</div>
+<script src="{% static 'js/tiny/singer_info.js' %}" type="text/javascript"></script>
+</body>
+</html>

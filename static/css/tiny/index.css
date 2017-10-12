@@ -1,0 +1,24 @@
+/*
+index 主页
+*/
+body {
+    background: no-repeat,url("../../imgs/sea1.jpg");
+
+}
+#top {
+    height: 144px;
+}
+
+#nav li a {
+    font-size: 24px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+#content {
+    height: 1200px;
+}
+
+#footer {
+    height: 300px;
+}
